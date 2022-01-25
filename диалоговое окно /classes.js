@@ -61,15 +61,11 @@ function createModal(addGoodButton, closeModalButton) {
   return modal;
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Темы: Создание и Поиск HTML элементов, События(добавление слушателей), Функции/////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
 window.addEventListener('DOMContentLoaded', () => {
-  // Селекторы
+
   const app = document.querySelector('#app');
 
-  // Статические элементы
-  /* Генерация Таблицы */
+
   const table = document.createElement('table');
   const thead = document.createElement('thead')
   const tbody = document.createElement('tbody')
@@ -142,7 +138,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const modal = createModal(addGoodButton, closeModalButton)
 
-  // Подключение слушателей событий
+  //подключение слушателей
   addButton.addEventListener('click', toggleModal)
   addGoodButton.addEventListener('click', addGood)
   closeModalButton.addEventListener('click', toggleModal)
